@@ -1,0 +1,12 @@
+function OurApp() {
+  return (
+    <>
+      <h1>Tic-Toc</h1>
+      <p className="text-special">{ new Date().getSeconds().toLocaleString() }</p>
+    </>
+  )
+}
+
+setInterval(function() {
+  ReactDOM.render(<OurApp />, document.getElementById('app'))
+}, 1000)
